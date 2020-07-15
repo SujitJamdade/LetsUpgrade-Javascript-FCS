@@ -1,0 +1,83 @@
+                                      ASSIGNMENT  DAY 01
+
+QUESTION NO : 01
+ EXPLAIN THE VARIOUS METHODS IN CONSOLE FUNCTION
+
+1) console.assert()- log a message & stack trace to console if the first aegument is false.
+
+2) console.clear()- clear the console
+
+3) console.count()- log the no of times this line has been called with the given label.
+
+4) console.error()-  outputs an error message .you may use string substitution and additional arguments with this method.
+
+5) console .group()- cerate a new inline group . indenting all following output by anotherlevel.To move  back out a level.
+
+6) console.info()- informative logging of information .you may use string substitution and additional arguments with this method.
+
+7) console.log() -for general output of logging information you msy use string substitution and additionl arguments with this method.
+
+8) console.time() - starts timer with a name specified as an input parameter up to 10,000simultaneous timers run on agiven page.
+
+9) console.table()- displays tabular data as a table.
+
+10) comsole.warn() - outputs  warning message you may use string substtution and arguments with this method.
+
+QUESTION NO : 02
+DIFFERENCE BETWEEN VAR, LET ,CONST.
+
+* VAR- 1)var is a functioned scope when it is declared outside function 
+     2) var will be declared anywhere in the block 
+
+eg  var name = " hii" 
+
+    function newfunction(){
+      var hello = "hello";
+    }    
+
+* Let -1) anything in the curly bracket is block and let is local varible.
+       2) let is only work in a particular scope 
+
+eg  function node simplified(){4
+    let a=10;
+    console.log(a);//output 10
+    if(true){
+    let a=20;
+    console.log(a);//output 20
+    }
+    console.log(a);//output 10
+    }  
+
+* const - 1) const statement values can be assined once and they cannot be reassined 
+    
+eg  function nodesimplified(){
+    const MY-VARIABLE =10;
+    console.log(MY-VARIABLE);//output 10
+    }  
+
+QUESTION NO : 03
+ INTRO ON AVAILABLE DATATYPES IN JAVASCRIPT
+
+1) SYMBOL- A symbol is unique and immutable primitive value and may be used as the key of an object
+           property . In some progemiing lang symbol are called atoms.
+
+2) OBJECT- In computer science , an object is a value in memory is possibly referenced by an identifier.
+
+3) STRING TYPE- In jvascript string type is used to represnt textual data . It is a set of elements of 16 bits unsigned integer value . 
+                Each element in string  occupies  a position in the string .the first element is at index 0 the next at index 1
+                The length ofa string is the of elements in it.javascript string are immutable this means that once a string is 
+                created , it is not possible to modify it.
+
+4) BigInt TYPE- The BigInt type is numeric primitive in js that can represnt integers with arbitary precision .with BigInt you can 
+                safely store and operate on large integers even beyond the safe integer limit for no.
+                A BigInt is created by appending n to the end of an integer or by calling the constructor.
+
+5) Number type - The number type is double precision 64 bit binary format IEEE value In addition to represnting 
+                 floating point no ,the number type has three symbolic  values 
+                 1 + Infinity 2 -Infinity 3 NaN
+
+6) BOOLEAN TYPE - Boolean represents  logical entity and can have two values that is true and false.
+
+7) NULL TYPE- the null type is exactly one value null .
+
+8) UNDEFINED TYPE -A variable that has not been assined a value has the value undefined .
