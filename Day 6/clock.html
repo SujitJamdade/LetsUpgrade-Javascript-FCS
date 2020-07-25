@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Program on the Clock</title>
+
+       
+    </head>
+    <body>
+    <script>
+   function doDate()
+{
+    var str = "";
+
+    var now = new Date();
+
+    str += "Today is: " + now.getHours() +":" + now.getMinutes() + ":" + now.getSeconds();
+    document.getElementById("todaysDate").innerHTML = str;
+}
+
+setInterval(doDate, 1000);
+
+</script>
+<div id="todaysDate"></div>
+    </body>
+
+</html>

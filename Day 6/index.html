@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Program on the Background Color</title>
+
+    </head>
+
+   
+    
+            <script type="text/javascript">
+             var c = ["blue", "black", "yellow", "red","pink","aqua","Brown"];
+
+  function changeColor() {
+    setTimeout(function loop() {
+      document.bgColor = c.shift();
+      if (c.length) {
+        setTimeout(loop, 5000);
+      }
+    }, 5000);
+  }
+
+  function start() {
+    setInterval(changeColor(), 20000);
+  }
+</script>
+
+<body onload="start()">
+</body>
+   
+
+  
+
+
+</html>
